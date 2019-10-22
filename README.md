@@ -1,5 +1,33 @@
 docker-oracle-xe-11g
 ============================
+Build：
+```
+git clone https://github.com/JoeyW1991/docker-oracle-xe-11g.git
+cd docker-oracle-xe-11g
+docker build -t oracle-xe-11g .
+```
+
+Run for APEX user:
+```
+docker run -d -p 49161:1521 -p 8080:8080 oracle-xe-11g
+```
+
+```
+# Login http://localhost:8080/apex/apex_admin with following credential:
+username: ADMIN
+password: admin
+```
+
+
+
+
+
+
+
+
+
+Old doc
+----
 
 Oracle Express Edition 11g Release 2 on Ubuntu 18.04 LTS
 
